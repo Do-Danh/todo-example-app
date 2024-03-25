@@ -21,6 +21,7 @@ const openDb = () => {
         database: process.env.DB_NAME,
         password: process.env.DB_PASSWORD,
         port: process.env.DB_PORT,
+        ssl: process.env.SSL
     })
     return pool
 }
